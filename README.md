@@ -1,5 +1,11 @@
 # StockPulseAI · 股脉
 
+**[中文](#中文) ｜ [English](#english)**
+
+---
+
+<a name="中文"></a>
+
 > **AI 驱动的美股 + 亚洲股市投研助手**（Android）。多市场实时行情、K 线 + 技术指标、国际个股新闻、AI 结构化投资意见。全部基于免费 API。
 
 ## 📥 下载
@@ -46,3 +52,54 @@ Kotlin · Jetpack Compose · MVVM + Hilt · Room · Retrofit/Moshi · MPAndroidC
 ## ⚠️ 免责声明
 
 本 App 所有分析（含 AI 生成内容）**仅供参考，不构成投资建议**。免费行情有 15–20 分钟延迟。
+
+---
+
+<a name="english"></a>
+
+> **AI-powered research assistant for US & Asian equities** (Android). Multi-market live quotes, candlestick charts + technical indicators, international company news, and structured AI investment opinions — all on free APIs.
+
+## 📥 Download
+
+**[⬇️ Download the latest APK](https://github.com/Kevinisme108/StockPulseAI-releases/releases/latest)**
+
+Grab `stockpulseai_v*.apk` → enable "Install from unknown sources" on Android. The source repo is private; only the APK is published here for public download.
+
+## ✨ Features
+
+### Multi-market quotes
+- 🇺🇸 US · 🇲🇾 Malaysia · 🇭🇰 Hong Kong · 🇨🇳 China A-shares · 🇸🇬 Singapore
+- World indices: Dow Jones / NASDAQ / S&P 500 **real index levels**
+- Asia markets: FTSE Bursa Malaysia / Hang Seng / Shanghai / STI + Gold / Silver / Oil
+- Local-currency display: RM / HK$ / S$ / ¥
+
+### Stock detail
+- Daily / weekly / monthly candles + MA20/50/200, RSI(14), MACD (computed locally, zero API cost)
+- Fundamentals: PE / PEG / EV-EBITDA / EPS / revenue growth / net margin / ROE / dividend yield / 52-week range
+- Financial performance (quarterly / annual) + earnings surprises + analyst ratings
+- Company news: international tickers fetched via Google News — real, distinct articles
+
+### AI research assistant
+- Market-aware analyst persona; structured output across Technical / Fundamental / News / Overall Rating
+- Per-stock **relative-strength** read against its home benchmark index
+- Market commentary that factors in your watchlist holdings
+- Switchable AI providers: Gemini / DeepSeek / Groq
+
+## 🔑 Setup (free keys)
+
+| Service | Sign up | Purpose | Free tier |
+|---------|---------|---------|-----------|
+| Finnhub | finnhub.io | US quotes/news/fundamentals | 60 req/min |
+| Twelve Data | twelvedata.com | US historical K-line | 800 req/day |
+| Gemini | aistudio.google.com | AI analysis | ~1,500 req/day |
+| DeepSeek / Groq | optional | AI analysis (alt) | Groq free forever |
+
+> Asian markets (quotes / K-line / news) use Yahoo Finance + Google News — **no key required**. Enter keys under Settings after install (stored encrypted on device).
+
+## 🛠 Tech stack
+
+Kotlin · Jetpack Compose · MVVM + Hilt · Room · Retrofit/Moshi · MPAndroidChart
+
+## ⚠️ Disclaimer
+
+All analysis (including AI-generated content) is **for reference only and does not constitute investment advice**. Free quotes are delayed 15–20 minutes.
